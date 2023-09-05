@@ -34,7 +34,7 @@ export class AdminController {
     private readonly adminService: AdminService,
     private readonly redisService: RedisService,
   ) {}
-  @UseGuards(JwtGuard, IsCreatorGuard)
+  
   @ApiOperation({ summary: 'Create a new admin' })
   @Post()
   create(
