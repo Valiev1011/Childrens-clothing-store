@@ -4,7 +4,6 @@ import { JwtModule } from '@nestjs/jwt';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { MailModule } from './mail/mail.module';
 import { Product } from './product/model/product.model';
-
 import { ProductModule } from './product/product.module';
 import { User } from './user/model/user.model';
 import { UserModule } from './user/user.module';

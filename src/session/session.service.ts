@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { CreateSessionDto } from './dto/create-session.dto';
 import { UpdateSessionDto } from './dto/update-session.dto';
-import { Session } from './model/session.model'; // Make sure to import the correct model
+import { Session } from './model/session.model';
 import * as uuid from 'uuid';
 import { Response } from 'express';
 import { SessionCartService } from '../session_cart/session_cart.service';

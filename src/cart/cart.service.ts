@@ -16,6 +16,7 @@ import { ZakazService } from '../zakaz/zakaz.service';
 import { CreateCartDto } from './dto/create-cart.dto';
 import { UpdateCartDto } from './dto/update-cart.dto';
 import { Cart } from './model/cart.model';
+import * as uuid from 'uuid';
 
 @Injectable()
 export class CartService {

@@ -11,9 +11,8 @@ import {
 import { AddressService } from './address.service';
 import { CreateAddressDto } from './dto/create-address.dto';
 import { UpdateAddressDto } from './dto/update-address.dto';
-import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger'; // Import Swagger decorators
+import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { JwtGuard } from '../guards/jwt.guard';
-
 
 @Controller('address')
 @UseGuards(JwtGuard)
@@ -21,7 +20,6 @@ import { JwtGuard } from '../guards/jwt.guard';
 export class AddressController {
   constructor(private readonly addressService: AddressService) {}
 
-  
   @Post()
   @ApiOperation({ summary: 'Create a new address' })
   create(@Body() createAddressDto: CreateAddressDto) {

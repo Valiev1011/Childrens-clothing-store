@@ -27,7 +27,6 @@ import { User2Guard } from '../guards/user2.guard';
 export class CartItemsController {
   constructor(
     private readonly cartItemsService: CartItemsService,
-    private readonly orderService: ZakazService,
   ) {}
 
   @UseGuards(User2Guard)
